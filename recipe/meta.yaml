@@ -9,6 +9,10 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/fplll/fplll/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.gz
   sha256: d2b11b7dcb26c30ac1aab9ff75aca9b3dd6e0b0b40c382af16017a717dfe05c2
+  patches:
+    # Fix for https://github.com/fplll/fplll/issues/205
+    # Backported from https://github.com/fplll/fplll/commit/f372182bbe0f0597e7d6e39f8d23f18a21d1d500
+    - enumeration-link-error.patch
 
 build:
   number: 0
