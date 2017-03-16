@@ -15,7 +15,7 @@ source:
     - enumeration-link-error.patch
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
@@ -23,11 +23,11 @@ requirements:
     - toolchain
     - libtool
     - m4
-    - gmp
-    - mpfr
+    - gmp >=5.0.1,<7
+    - mpfr 3.*
   run:
-    - gmp
-    - mpfr
+    - gmp >=5.0.1,<7
+    - mpfr 3.*
 
 test:
   commands:
