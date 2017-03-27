@@ -1,4 +1,4 @@
-{% set version = "5.0.3" %}
+{% set version = "5.1.0" %}
 {% set name = "fplll" %}
 
 package:
@@ -8,14 +8,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/fplll/fplll/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d2b11b7dcb26c30ac1aab9ff75aca9b3dd6e0b0b40c382af16017a717dfe05c2
-  patches:
-    # Fix for https://github.com/fplll/fplll/issues/205
-    # Backported from https://github.com/fplll/fplll/commit/f372182bbe0f0597e7d6e39f8d23f18a21d1d500
-    - enumeration-link-error.patch
+  sha256: 58175c54cc92752576a64361c73e4ea7797fc18fb703b3f22c7570a09075486f
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
 
 requirements:
