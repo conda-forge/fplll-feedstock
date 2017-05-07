@@ -11,7 +11,7 @@ source:
   sha256: 58175c54cc92752576a64361c73e4ea7797fc18fb703b3f22c7570a09075486f
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -21,9 +21,11 @@ requirements:
     - m4
     - gmp >=5.0.1,<7
     - mpfr 3.*
+    - qd 2.3.*
   run:
     - gmp >=5.0.1,<7
     - mpfr 3.*
+    - qd 2.3.*
 
 test:
   commands:
