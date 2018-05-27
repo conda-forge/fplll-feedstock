@@ -11,20 +11,23 @@ source:
   sha256: 75e17fcaa4fc5fdddbe6eb42aca5f38c4c169a4b52756e74fbe2d1769737ac9c
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
+  run_exports:
+    - {{ pin_subpackage('fplll', max_pin='x.x') }}
 
 requirements:
   build:
-    - toolchain
+    - {{ compiler('cxx') }}
     - libtool
     - m4
-    - gmp >=5.0.1,<7
-    - mpfr 3.*
+  host:
+    - gmp
+    - mpfr
     - qd 2.3.*
   run:
-    - gmp >=5.0.1,<7
-    - mpfr 3.*
+    - gmp
+    - mpfr
     - qd 2.3.*
 
 test:
@@ -45,3 +48,4 @@ about:
 extra:
   recipe-maintainers:
     - isuruf
+    - saraedum
