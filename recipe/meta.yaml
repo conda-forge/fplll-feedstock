@@ -11,7 +11,7 @@ source:
   sha256: e38e3f8f14d5dbf46aab66d6c12f5973d4b12b72832161ed1491e8e925de4816
 
 build:
-  number: 0
+  number: 1000
   skip: true  # [win]
   run_exports:
     # fplll had a breaking change in the 5.2.0 to 5.2.1 upgrade, so it's best to be strict about pinning.
