@@ -1,9 +1,12 @@
 #!/bin/bash
 
-export LD_LIBRARY_PATH=$PREFIX/lib:$LD_LIBRARY_PATH
-export LDFLAGS="-L$PREFIX/lib $LDFLAGS"
-export CFLAGS="-O3 -g -fPIC -I$PREFIX/include $CFLAGS"
-export CXXFLAGS="-O3 -g -fPIC -I$PREFIX/include $CXXFLAGS"
+if [ "$(uname)" == "Linux" ]
+then
+   export LDFLAGS="$LDFLAGS -Wl,-rpath-link,${PREFIX}/lib"
+fi
+
+export CFLAGS="-O3 -g -fPIC $CFLAGS"
+export CXXFLAGS="-O3 -g -fPIC $CXXFLAGS"
 
 chmod +x configure
 
