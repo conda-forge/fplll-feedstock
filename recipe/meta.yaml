@@ -22,6 +22,7 @@ requirements:
     - {{ compiler('cxx') }}
     - libtool
     - m4
+    - make
   host:
     - gmp
     - mpfr
