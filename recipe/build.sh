@@ -6,7 +6,7 @@ export CXXFLAGS="-O3 -g -fPIC $CXXFLAGS"
 chmod +x configure
 
 if [[ "$CI" == "travis" ]]; then
-  export CPU_COUNT=4
+  export CPU_COUNT=2
 fi
 
 ./configure --prefix=$PREFIX --libdir=$PREFIX/lib
