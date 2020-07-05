@@ -41,7 +41,7 @@ test:
 
 about:
   home: https://github.com/fplll/fplll
-  license: LGPL v2+
+  license: LGPL-2.1-or-later
   license_file: {{ SRC_DIR }}/COPYING
   summary: Lattice algorithms using floating-point arithmetic
   doc_url: https://fplll.github.io/fplll
