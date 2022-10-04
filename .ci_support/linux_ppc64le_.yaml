@@ -14,10 +14,5 @@ gmp:
 - '6'
 mpfr:
 - '4'
-pin_run_as_build:
-  gmp:
-    max_pin: x
-  mpfr:
-    max_pin: x
 target_platform:
 - linux-ppc64le
