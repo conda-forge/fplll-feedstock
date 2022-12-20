@@ -1,4 +1,4 @@
-{% set version = "5.4.2" %}
+{% set version = "5.4.3" %}
 {% set name = "fplll" %}
 
 package:
@@ -8,10 +8,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/fplll/fplll/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6e7b1704fd56f29dd9fc1dd719cc1f2df1f58964fd77bbde162f594d7fff7ba5
+  sha256: 43cf1a3e016d94f85ddff2888e62853c510774521a4abdfb5055c90f40e6eba1
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   run_exports:
     # fplll had a breaking change in the 5.2.0 to 5.2.1 upgrade, so it's best to be strict about pinning.
