@@ -1,11 +1,28 @@
+About fplll-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fplll-feedstock/blob/main/LICENSE.txt)
+
+
 About fplll
-===========
+-----------
 
 Home: https://github.com/fplll/fplll
 
 Package license: LGPL-2.1-or-later
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fplll-feedstock/blob/main/LICENSE.txt)
+Summary: Lattice algorithms using floating-point arithmetic
+
+Development: https://github.com/fplll/fplll
+
+Documentation: https://fplll.github.io/fplll
+
+About fplll
+-----------
+
+Home: https://github.com/fplll/fplll
+
+Package license: LGPL-2.1-or-later
 
 Summary: Lattice algorithms using floating-point arithmetic
 
