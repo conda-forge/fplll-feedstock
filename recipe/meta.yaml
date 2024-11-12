@@ -1,4 +1,4 @@
-{% set version = "5.4.5" %}
+{% set version = "5.5.0" %}
 {% set name = "fplll" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/fplll/fplll/releases/download/{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 76d3778f0326597ed7505bab19493a9bf6b73a5c5ca614e8fb82f42105c57d00
+  sha256: f0af6bdd0ebd5871e87ff3ef7737cb5360b1e38181a4e5a8c1236f3476fec3b2
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
   build:
     - libtool  # [unix]
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - libtool
     - m4
     - make
